@@ -1,0 +1,17 @@
+{
+	"name": "AzureSqlTabledest",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabasedest",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "salesDetails"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,24 @@
+{
+	"name": "DestinationDataset_rmi",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobdest",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "UnsoldProducts",
+				"container": "output"
+			},
+			"columnDelimiter": "\t",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,13 @@
+{
+	"name": "SourceDataset_rmi",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseSource",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
