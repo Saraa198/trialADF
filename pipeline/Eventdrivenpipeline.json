@@ -25,11 +25,21 @@
 							"type": "BinaryReadSettings"
 						}
 					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"tableOption": "autoCreate"
+					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
 						"referenceName": "SourceDataset_ppg",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "AzureSqlTabledest",
 						"type": "DatasetReference"
 					}
 				]
